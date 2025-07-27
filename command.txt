@@ -1,0 +1,12 @@
+
+// ✅✅⬇️RUN THESE COMMAND IN TERMINAL 
+
+//✅ BUILD DOCKER 
+
+docker build -t adobe_solution:latest .
+
+
+
+//✅ RUN IT 
+
+docker run --rm -v "${PWD}\app\input:/app/input" -v "${PWD}\app\output:/app/output" --network none adobe_solution:latest
